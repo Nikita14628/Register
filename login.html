@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="login">
+        <h2 id="txt">Login</h2>
+        <div class="inputBox">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="Password">
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Login" id="btn">
+        </div>
+        <div class="group">
+            <a href="#">Forget Password</a>
+            <a href="register.html">Signup</a> 
+        </div>
+    </div>
+    <div class="colors">
+        <span class = "active" onclick="changeColor('#26d480')" style="--clr:#26d480;"></span>
+        <span onclick="changeColor('#ff6b6b')" style="--clr:#ff6b6b;"></span>
+        <span onclick="changeColor('#2e86de')" style="--clr:#2e86de;"></span>
+        <span onclick="changeColor('#f368e0')" style="--clr:#f368e0;"></span>
+        <span onclick="changeColor('#ff9f43')" style="--clr:#ff9f43;"></span>
+
+    </div>
+
+    <script src="login.js"></script>
+    <div class ="wrapper">
+        <div class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fa-brands fa-facebook"></i></span>
+        </div>
+        
+        <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span><i class="fa-brands fa-twitter"></i></span>
+        </div>
+        
+        <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fa-brands fa-instagram"></i></span>
+        </div>
+        
+        <div class="icon github">
+            <div class="tooltip">Github</div>
+            <span><i class="fa-brands fa-github"></i></span>
+        </div>
+        
+        <div class="icon youtube">
+            <div class="tooltip">Youtube</div>
+            <span><i class="fa-brands fa-youtube"></i></span>
+        </div>
+        <div class="icon vk">
+            <div class="tooltip">ВКонтакте</div>
+            <span><i class="fa-brands fa-vk"></i></span>
+        </div>
+        <div class="icon Telegram">
+            <div class="tooltip">Telegram</div>
+            <span><i class="fa-brands fa-telegram"></i></span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- The `multiple` attribute lets users select multiple files. -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Сайт с Json</title>
+    <script type="text/javascript">
+		// Место для кода
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <article class="article article_bluebg article_second">
+        <form class="form">
+            <input type="text" name="contactsForm" class="form_input" id="contactsForm" placeholder="E-mail">
+    </article>
+
+    <h1></h1>
+    <div id="app">
+        <button @click="getPosts">Обновить страницу</button>
+        <hr>
+        <div v-for="p in post">
+            <h2>{{p}}</h2>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    post: []
+                }
+            },
+            methods: {
+                getPosts() {
+                    fetch('http://127.0.0.1:8000/')
+                        .then(response => response.json())
+                        .then(data => this.post = data)
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
